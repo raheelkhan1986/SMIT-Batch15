@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form - Assignment-2</title>
+    <style>
+        .form {
+            width: 600px;
+            margin-left: 25px;
+            text-align: left;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form">
+        <form>
+            <h1>Application Form</h1>
+            <span>
+                <label for="First Name">First Name:</label>
+                <input type="text" name="First Name" id="First Name">
+            </span>
+            <span>
+                <label for="Last Name">Last Name:</label>
+                <input type="text" name="Last Name" id="Last Name">
+            </span>
+            <br><br>
+            <span>
+                <label for="Date of Birth">D.O.B:</label>
+                <input type="date" name="Date of Birth" id="Date of Birth">
+            </span>
+            <span>
+                <label for="Age">Age:</label>
+                <input type="number" name="Age" id="Age">
+            </span>
+            <br><br>
+            <span>
+                <label for="Gender">Gender:</label>
+                <select name="Gender" id="Gender">
+                    <option value="Gender" selected>Select</option>
+                    <option value="Gender">Male</option>
+                    <option value="Gender">Femle</option>
+                </select>
+            </span>
+            <span>
+                <label for="Email">E-mail:</label>
+                <input type="Email" name="Email" id="Email" placeholder="Enter Email Address">
+            </span>
+            <br><br>
+            <span>
+                <label for="Position">Position Available:</label>
+                <input type="radio" name="Position" id="Position">
+                Junior Developler
+                <input type="radio" name="Position" id="Position">
+                Mid-Level Developler
+                <input type="radio" name="Position" id="Position">
+                Senior Developler
+            </span>
+            <br><br>
+            <span>
+                <label for="Prog-Language">Programmnig Language:</label>
+                <input type="checkbox" name="Prog-Language" id="Prog-Language">
+                Java
+                <input type="checkbox" name="Prog-Language" id="Prog-Language">
+                Java Script
+                <input type="checkbox" name="Prog-Language" id="Prog-Language">
+                Python
+            </span><br><br>
+            <span>
+                <label for="Password">Password:</label>
+                <input type="password" name="Password" id="Password">
+            </span>
+            <span>
+                <label for="Conf-Password">Confirmed Password:</label>
+                <input type="Conf-Password" name="Conf-Password" id="Conf-Password">
+            </span><br><br>
+            <span>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </span>
+        </form>
+    </div>
+</body>
+
+</html>
