@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .Reg-form {
+            width: 100%;
+            height: auto;
+            margin: 50px 50px;
+            display: flex;
+            align-items: start;
+            /* justify-content: start; */
+            flex-flow: column;
+            line-height: 2.5;
+        }
+
+        .Reg-form .heading {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-left: 250px;
+        }
+
+        .form {}
+    </style>
+</head>
+
+<body>
+    <div class="name">
+        <h4 style="margin-top: 15px; margin-left:15px; line-height:1.5;">Muhammad Raheel <br>
+            WMA-345927</h4>
+    </div>
+    <div class="Reg-form">
+        <div class="heading">
+            <div class="image">
+                <img src="images/sylani.png" alt="Sylani-logo" width="150px">
+            </div>
+            <h2>STUDENT REGISTRATION FORM</h2>
+        </div>
+        <table id="form">
+            <tr>
+                <td>FIRST NAME</td>
+                <td><input type="Text" name="F-Name" id="F-Name" placeholder="Enter the First Name"> (maximum 30
+                    characters a-z and A-Z)</td>
+            </tr>
+            <tr>
+                <td>LAST NAME</td>
+                <td><input type="Text" name="L-Name" id="L-Name" placeholder="Enter the Last Name"> (maximum 30
+                    characters a-z and A-Z)</td>
+            </tr>
+            <tr>
+                <td>DATE OF BIRTH</td>
+                <td><input type="date" name="Date of Birth" id="Date of Birth"></td>
+            </tr>
+            <tr>
+                <td>EMAIL ID</td>
+                <td><input type="email" name="Email" id="Email" placeholder="Enter the Email Address"></td>
+            </tr>
+            <tr>
+                <td>ENTER MOBILE NUMBER</td>
+                <td><input type="text" name="Mob-Number" id="Mob-Number" placeholder="Enter the Mobile Number"> (10 Digit Numbers)</td>
+            </tr>
+            <tr>
+                <td>GENDER</td>
+                <td>
+                    Male <input type="radio" name="Gender" id="Male">
+                    Female <input type="radio" name="Gender" id="Fe-male">
+                </td>
+            </tr>
+            <tr>
+                <td>ADDRESS</td>
+                <td><textarea name="Text-area" id="Text-area" rows="7" cols="40"></textarea></td>
+            </tr>
+            <tr>
+                <td>CITY</td>
+                <td><input type="Text" name="City Name" id="City Name" placeholder="Enter the City Name"> (maximum 30
+                    characters a-z and A-Z)</td>
+            </tr>
+            <tr>
+                <td>PIN CODE</td>
+                <td><input type="number" name="Pin Code" id="Pin Code" placeholder="Enter Pin Code"> (6 Digit Numbers)
+                </td>
+            </tr>
+            <tr>
+                <td>STATE</td>
+                <td><input type="Text" name="State Name" id="State Name" placeholder="Enter the State Name"></td>
+            </tr>
+            <tr>
+                <td>COUNTRY</td>
+                <td><input type="Text" name="Country-Name" id="Country-Name" placeholder="Enter the Country Name"></td>
+            </tr>
+            <tr>
+                <td>HOBBIES</td>
+                <td style="line-height: 1.5;">
+                    Drawing <input type="checkbox" name="Drawing" id="Drawing">
+                    Singing <input type="checkbox" name="Singing" id="Singing">
+                    Dansing <input type="checkbox" name="Dansing" id="Dansing">
+                    Sketching <input type="checkbox" name="Sketching" id="Sketching"><br>
+                    Others <input type="checkbox" name="Others" id="Others">
+                    <input type="text" name="Others" id="Others">
+                </td>
+            </tr>
+            <tr>
+                <td>QUALIFICATION</td>
+                <td style="line-height: 1.2;">
+                    <Table>
+                        <tr>
+                            <th>Sr.No</th>
+                            <th>Examination</th>
+                            <th>Board</th>
+                            <th>Percentage</th>
+                            <th>Year of Passing</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Class X</td>
+                            <td><input type="text" name="" id=""></td>
+                            <td><input type="text" name="" id=""></td>
+                            <td><input type="text" name="" id=""></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Class XII</td>
+                            <td><input type="text" name="" id=""></td>
+                            <td><input type="text" name="" id=""></td>
+                            <td><input type="text" name="" id=""></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Graduation</td>
+                            <td><input type="text" name="" id=""></td>
+                            <td><input type="text" name="" id=""></td>
+                            <td><input type="text" name="" id=""></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Master</td>
+                            <td><input type="text" name="" id=""></td>
+                            <td><input type="text" name="" id=""></td>
+                            <td><input type="text" name="" id=""></td>
+                        </tr>
+                        <tr style="text-align: center;">
+                            <td></td>
+                            <td></td>
+                            <td>(10 Char Max)</td>
+                            <td>upto 2 Dacimal</td>
+                            <td></td>
+                        </tr>
+                    </Table>
+
+                </td>
+            </tr>
+            <tr>
+                <td>COURSE APPLIED FOR</td>
+                <td><select name="Course" id="">
+                        <option value="Select-Course" selected>Select any Course</option>
+                        <option value="BCA">BCA</option>
+                        <option value="B.Com">B.Com</option>
+                        <option value="B.Sc">B.Sc</option>
+                        <option value="B.A">B.A</option>
+                    </select></td>
+            </tr>
+            <tr>
+                <td style="line-height: 1;">UPLOAD YOUR PIC<br>  (only .png, .jpg, .jpeg formats allow)</td>
+                <td><input type="file" name="File" id="File"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Submit"> <input type="reset" value="Reset"></td>
+                <td></td>
+            </tr>
+    </div>
+    <div>
+
+    </div>
+</body>
+
+</html>
