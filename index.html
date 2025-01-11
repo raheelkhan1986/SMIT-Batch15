@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+            font-family: "Roboto", serif;
+        }
+
+        :root {
+            --primary-color: #b9ff66;
+            --secondary-color: #191a23;
+            --base-color: #f3f3f3;
+        }
+
+        .main {
+            width: 100%;
+            height: 100vh;
+            /* background: linear-gradient(to right, #b9ff66, 20%, #9ff832); */
+            background-size: cover;
+            background-position: center;
+        }
+
+        .header {
+            height: 10vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0px 50px;
+            /* background-color: rgba(46, 46, 46, 0.178); */
+        }
+
+        .header .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 0px 50px;
+        }
+
+        .header .navbar ul {
+            display: flex;
+            justify-content: space-evenly;
+            gap: 30px;
+
+        }
+
+        .header .navbar ul li a {
+            color: var(--secondary-color);
+            font-weight: 400;
+            font-size: 1rem;
+            /* font-family: "Roboto", serif; */
+        }
+
+        .header .navbar .btn {
+            width: 150px;
+            height: 40px;
+            background-color: var(--primary-color);
+            border: 2px solid rgba(136, 136, 136, 0.349);
+            border-radius: 10px;
+            outline: none;
+            /* border: none; */
+            transition: all .8s ease-in-out .2s;
+        }
+
+        .header .navbar .btn:hover {
+            background-color: #8cfd01
+        }
+
+        .header .navbar .btn a {
+            color: var(--secondary-color);
+            font-weight: 600;
+            font-size: .8rem;
+            /* font-family: "Roboto", serif; */
+        }
+
+        .content {
+            position: relative;
+            width: 90vw;
+            height: 80vh;
+            top: 50px;
+            left: 60px;
+        }
+
+        .content h1 {
+            width: 400px;
+            font-size: 3rem;
+            font-weight: 400;
+            letter-spacing: .5px;
+            line-height: 1.1;
+        }
+
+        .content p {
+            width: 400px;
+            font-size: 1rem;
+            line-height: 2;
+            margin-top: 20px;
+        }
+
+        .content a {
+            display: inline-block;
+            width: 200px;
+            height: 50px;
+            font-size: 1rem;
+            font-weight: 500;
+            color: white;
+            background-color: var(--secondary-color);
+            border-radius: 5px;
+            text-align: center;
+            padding-top: 15px;
+            margin-top: 10px;
+            transition: all 1s ease-in-out .2s;
+        }
+        .content a:hover {
+            background-color: var(--base-color);
+            color: var(--secondary-color);
+        }
+
+        .content .image {
+            position: absolute;
+            right: 10px;
+            top: 0;
+        }
+
+        .footer {
+            width: 100vw;
+            position: relative;
+            bottom: 0px;
+            padding: 0px 50px;
+
+        }
+
+        .footer .logos {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+        }
+
+        .footer .logos .log-a {
+            filter: grayscale(100);
+
+        }
+
+        .footer .logos .log-a:hover {
+            filter: none;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Muhammad Raheel (Roll#: WMA-345927) SMIT Batch-15 -->
+    <div class="main">
+        <div class="header">
+            <div class="logo">
+                <img src="logo.png" alt="logo" width="120px">
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Use Cases</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+                <button class="btn"><a href="#">Request a quote</a></button>
+            </nav>
+        </div>
+        <div class="content">
+            <h1>Navigating the digital landscape for success</h1>
+            <p>Our Digital marketing agency helps businesses grow and succeed online through a range of services
+                including SEO,PPC, Social Media Marketing and Content Creation</p>
+            <a href="#">Book a consultation</a>
+            <div class="image"><img src="image.png" width="450px"></div>
+        </div>
+
+        <div class="footer">
+            <div class="logos">
+                <a href="#"><img src="amazon.png" width="100px" height="50px" class="log-a"></a>
+                <a href="#"><img src="dribbble.png" width="100px" height="30px" class="log-a"></a>
+                <a href="#"><img src="hubspot.png" width="100px" height="50px" class="log-a"></a>
+                <a href="#"><img src="notion.png" width="100px" height="50px" class="log-a"></a>
+                <a href="#"><img src="netflix.png" width="100px" height="50px" class="log-a"></a>
+                <a href="#"><img src="zoom.png" width="100px" height="50px" class="log-a"></a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
