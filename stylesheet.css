@@ -1,0 +1,437 @@
+
+        :root {
+            --font-white: #fff;
+            --font-black: #23242A;
+            --font-grey: #444444;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+            font-family: "Roboto", sans-serif;
+        }
+
+        .header {
+            position: relative;
+            width: 100%;
+            height: 80vh;
+            background-color: #23242A;
+            background-position: center;
+            background-size: cover;
+            z-index: -1;
+            /* overflow: hidden; */
+        }
+
+        .header .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px 30px 0px 10px;
+        }
+
+        .header .navbar .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .header .navbar .nav a {
+            color: var(--font-white);
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .header .navbar .nav .btn {
+            width: 80px;
+            height: 25px;
+            color: var(--font-white);
+            font-size: 11px;
+            background: none;
+            outline: none;
+            border: 1px solid white;
+            border-radius: 1px;
+            padding: 8px, 0px;
+            text-align: center;
+        }
+
+        .header .content {
+            position: relative;
+            top: 25%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 70vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .header .content h1 {
+            color: var(--font-white);
+            text-align: center;
+            font-size: 45px;
+            font-weight: 800;
+        }
+
+        .header .content span {
+            font-size: 16px;
+            font-weight: 400;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+
+
+        }
+
+        .header .content button {
+            width: 150px;
+            height: 40px;
+            background-color: rgb(223, 66, 66);
+            border: none;
+            outline: none;
+            border-radius: 5px;
+        }
+
+        .header .content button a {
+            color: var(--font-white);
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .boxes {
+            position: relative;
+            top: -70px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: left;
+            gap: 20px;
+            /* z-index: 1; */
+        }
+
+        .boxes .box-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+
+        }
+
+        .boxes .box-container .box {
+            width: 180px;
+            height: 180px;
+            background-color: rgb(233, 233, 233);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: star;
+            gap: 10px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 4px rgba(187, 187, 187, 0.356);
+        }
+
+        .boxes .box-container .box h3 {
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .boxes .box-container .box p {
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 1.2;
+            color: var(--font-grey);
+        }
+
+        .boxes .box-container .box a {
+            color: var(--font-grey);
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .boxes .arrows {
+            padding-left: 80px;
+        }
+
+        .image-text {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 30px;
+            width: 70vw;
+            margin: 40px auto;
+        }
+
+        .image-text .text {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            width: 30vw;
+        }
+
+        .image-text .text h2 {
+            font-size: 30px;
+            line-height: 1.2;
+        }
+
+        .image-text .text p {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.5;
+        }
+
+        .image-text .text a {
+            color: rgb(2, 124, 196);
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .image-text .image img {
+            border-radius: 10px;
+            box-shadow: 7px 7px 10px rgba(128, 128, 128, 0.445);
+        }
+
+        .text-section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            gap: 30px;
+            width: 80vw;
+            margin-left: 100px;
+        }
+
+        .text-section .Section-1 {
+            width: 40vw;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .text-section .Section-1 h2 {
+            font-size: 30px;
+            font-weight: 600;
+            line-height: 1.2;
+        }
+
+        .text-section .Section-1 p {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.5;
+        }
+
+        .text-section .Section-2 {
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .text-section .Section-2 .Design,
+        .developing {
+            display: flex;
+            gap: 20px;
+
+        }
+
+        .text-section .Section-2 .Design,
+        .developing h4 {
+            font-size: 15px;
+            font-weight: 800;
+        }
+
+        .text-section .Section-2 .Design,
+        .developing p {
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 1.5;
+            padding-top: 10px;
+        }
+
+        .black-image {
+            background-color: #23242A;
+            /* background: url(images/Dark.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover; */
+            width: 70vw;
+            height: 25vh;
+            margin: auto;
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        .black-image {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            padding: 50px;
+            margin-top: 50px;
+
+        }
+
+        .black-image h2 {
+            font-size: 25px;
+            line-height: 2;
+            font-weight: 600;
+        }
+
+        .black-image p {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.5;
+            width: 450px;
+        }
+
+        .black-image .btn a {
+            display: inline-block;
+            width: 120px;
+            height: 40px;
+            color: white;
+            font-size: 14px;
+            padding-top: 10px;
+            text-align: center;
+            background-color: rgb(223, 66, 66);
+            border: none;
+            outline: none;
+            border-radius: 5px;
+        }
+
+        .text-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            gap: 100px;
+            margin-top: 70px;
+
+        }
+
+        .text-box .boxes {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        .text-box .boxes .box {
+            width: 180px;
+            height: 180px;
+            background-color: rgb(233, 233, 233);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            gap: 10px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 4px rgba(187, 187, 187, 0.356);
+        }
+
+        .text-box .boxes .box h3 {
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .text-box .boxes .box p {
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 1.2;
+            color: var(--font-grey);
+        }
+
+        .text-box .boxes .box a {
+            color: var(--font-grey);
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .text-box .text {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+
+        .text-box .text h3 {
+            width: 60vw;
+            font-size: 30px;
+        }
+
+        .image-center {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .image-center h1 {
+            font-size: 40px;
+            width: 45vw;
+        }
+
+        .image-center p {
+            font-size: 14px;
+            width: 45vw;
+            line-height: 1.5;
+        }
+
+        .image-center img {
+            width: 70vw;
+            height: 50vh;
+            object-fit: cover;
+        }
+
+        .three-images {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 50px;
+        }
+
+        .three-images {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .three-images .two-images {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .three-images .two-images .images {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 20px;
+            object-fit: cover;
+        }
+
+        .three-images .two-images .text {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .three-images .two-images .text h3 {
+            font-size: 30px;
+        }
+
+        .three-images .two-images .text p {
+            font-size: 14px;
+            line-height: 1.5;
+            width: 40vw;
+        }
+        .three-images .third-image img{
+            border-radius: 10px;
+        }
+  
